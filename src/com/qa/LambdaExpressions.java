@@ -13,7 +13,7 @@ class LambdaExpressions {
         FuncInterface fizz = (int x) -> {if (x%3 == 0) System.out.print(" Fizz");};
         FuncInterface buzz = (int x) -> {if (x%5 == 0) System.out.print(" Buzz");};
         LambdaExpressions lambda = new LambdaExpressions();
-        
+        System.out.println("This is a lambda at work");
         for (int x = 1; x <= 200; x ++) {
         	System.out.print(x);
         	lambda.operate(x, fizz);
